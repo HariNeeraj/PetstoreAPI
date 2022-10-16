@@ -1,8 +1,6 @@
 package Petstore.api.endpoints;
 
-import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.given;
 
 import Petstore.api.payload.User;
 import io.restassured.response.Response;
@@ -56,6 +54,32 @@ public class Userendpoints {
 			.pathParam("uname", Username)
 		.when()
 			.delete(Routes.deleteuser_url);
+		
+		return response;
+		
+	}
+	
+	public static Response Loginuser(String UserName, String password) {
+		
+		
+		Response response = given()
+				.accept("application/json")
+				.queryParams("userName", UserName)
+				.queryParams("PWD", password)
+				.auth().basic(UserName, password)
+				
+			.when()
+				.get(Routes.Loginuser_url);
+		
+		return response;
+	}
+	
+	public static Response Logoutuser(){
+		
+		Response response = given()
+				.accept("application/json")
+			.when()
+				.get(Routes.Logoutuser_url);
 		
 		return response;
 		

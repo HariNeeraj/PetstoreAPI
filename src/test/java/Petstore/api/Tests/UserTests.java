@@ -72,9 +72,27 @@ public class UserTests {
 		
 	}
 	
+	@Test(priority=4)
+	public void LoginUserTest() {
+		Response response= Userendpoints.Loginuser(Userpayload.getUsername(), Userpayload.getPassword());
+		response.then().log().all();
+		
+		
+		Assert.assertEquals(response.getHeader("Content-Type"), "application/json");
+		Assert.assertEquals(response.getHeader("Server"), "Jetty(9.2.9.v20150224)");
+	}
+	
+	@Test(priority=5)
+	public void LogoutuserTest() {
+		Response response= Userendpoints.Logoutuser();
+		response.then().log().all();
+		
+		Assert.assertEquals(response.getStatusCode(), 200);
+	}
 	
 	
-	@Test(dependsOnMethods= {"UpdateuserTest"})
+	
+	@Test(priority=6)
 	public void DeleteuserTest() {
 		
 		Response response= Userendpoints.Deleteuser(this.Userpayload.getUsername());

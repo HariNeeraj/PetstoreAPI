@@ -23,7 +23,8 @@ public class Routes {
 	public static String getuser_url= base_url+"/user/{uname}";
 	public static String updateuser_url= base_url+"/user/{uname}";
 	public static String deleteuser_url= base_url+"/user/{uname}";
-	public static String Loginuser_url= base_url+"/user/login?";	
+	public static String Loginuser_url= base_url+"/user/login";	
+	public static String Logoutuser_url = base_url+"/user/logout";
 	
 	
 

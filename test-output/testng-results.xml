@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-15T16:17:56 IST" name="Suite" finished-at="2022-10-15T16:18:10 IST" duration-ms="13469">
+  <suite started-at="2022-10-16T10:08:08 IST" name="Default suite" finished-at="2022-10-16T10:08:19 IST" duration-ms="11468">
     <groups>
     </groups>
-    <test started-at="2022-10-15T16:17:56 IST" name="Test" finished-at="2022-10-15T16:18:10 IST" duration-ms="13469">
+    <test started-at="2022-10-16T10:08:08 IST" name="Default test" finished-at="2022-10-16T10:08:19 IST" duration-ms="11468">
       <class name="Petstore.api.Tests.UserTests">
-        <test-method is-config="true" signature="testsetup()[pri:0, instance:Petstore.api.Tests.UserTests@67f639d3]" started-at="2022-10-15T16:17:57 IST" name="testsetup" finished-at="2022-10-15T16:17:57 IST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="testsetup()[pri:0, instance:Petstore.api.Tests.UserTests@3cebbb30]" started-at="2022-10-16T10:08:08 IST" name="testsetup" finished-at="2022-10-16T10:08:08 IST" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testsetup -->
-        <test-method signature="CreateuserTest()[pri:1, instance:Petstore.api.Tests.UserTests@67f639d3]" started-at="2022-10-15T16:17:57 IST" name="CreateuserTest" finished-at="2022-10-15T16:18:03 IST" duration-ms="6213" status="PASS">
+        <test-method signature="CreateuserTest()[pri:1, instance:Petstore.api.Tests.UserTests@3cebbb30]" started-at="2022-10-16T10:08:08 IST" name="CreateuserTest" finished-at="2022-10-16T10:08:11 IST" duration-ms="2889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateuserTest -->
-        <test-method signature="GetuserTest()[pri:2, instance:Petstore.api.Tests.UserTests@67f639d3]" started-at="2022-10-15T16:18:03 IST" name="GetuserTest" finished-at="2022-10-15T16:18:05 IST" duration-ms="1644" status="PASS">
+        <test-method signature="GetuserTest()[pri:2, instance:Petstore.api.Tests.UserTests@3cebbb30]" started-at="2022-10-16T10:08:11 IST" name="GetuserTest" finished-at="2022-10-16T10:08:13 IST" duration-ms="1443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetuserTest -->
-        <test-method signature="UpdateuserTest()[pri:3, instance:Petstore.api.Tests.UserTests@67f639d3]" started-at="2022-10-15T16:18:05 IST" name="UpdateuserTest" finished-at="2022-10-15T16:18:08 IST" duration-ms="3372" status="PASS">
+        <test-method signature="UpdateuserTest()[pri:3, instance:Petstore.api.Tests.UserTests@3cebbb30]" started-at="2022-10-16T10:08:13 IST" name="UpdateuserTest" finished-at="2022-10-16T10:08:15 IST" duration-ms="2770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateuserTest -->
-        <test-method signature="DeleteuserTest()[pri:0, instance:Petstore.api.Tests.UserTests@67f639d3]" started-at="2022-10-15T16:18:08 IST" name="DeleteuserTest" finished-at="2022-10-15T16:18:10 IST" depends-on-methods="Petstore.api.Tests.UserTests.UpdateuserTest" duration-ms="1736" status="PASS">
+        <test-method signature="LoginUserTest()[pri:4, instance:Petstore.api.Tests.UserTests@3cebbb30]" started-at="2022-10-16T10:08:15 IST" name="LoginUserTest" finished-at="2022-10-16T10:08:17 IST" duration-ms="1371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginUserTest -->
+        <test-method signature="LogoutuserTest()[pri:5, instance:Petstore.api.Tests.UserTests@3cebbb30]" started-at="2022-10-16T10:08:17 IST" name="LogoutuserTest" finished-at="2022-10-16T10:08:18 IST" duration-ms="1366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutuserTest -->
+        <test-method signature="DeleteuserTest()[pri:6, instance:Petstore.api.Tests.UserTests@3cebbb30]" started-at="2022-10-16T10:08:18 IST" name="DeleteuserTest" finished-at="2022-10-16T10:08:19 IST" duration-ms="1381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteuserTest -->
       </class> <!-- Petstore.api.Tests.UserTests -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
