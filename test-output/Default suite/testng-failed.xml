@@ -6,8 +6,7 @@
       <class name="Petstore.api.Tests.UserTests">
         <methods>
           <include name="testsetup"/>
-          <include name="UpdateuserTest"/>
-          <include name="LoginuserTest"/>
+          <include name="GetuserTest"/>
         </methods>
       </class> <!-- Petstore.api.Tests.UserTests -->
     </classes>

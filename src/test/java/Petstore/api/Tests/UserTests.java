@@ -8,6 +8,7 @@ import com.github.javafaker.Faker;
 
 import Petstore.api.endpoints.Userendpoints;
 import Petstore.api.payload.User;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
 
@@ -50,7 +51,9 @@ public class UserTests {
 	public void GetuserTest() {
 		
 		Response response = Userendpoints.Getuser(Userpayload.getUsername());
-		response.then().log().all();
+		response.then()
+		.assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("Userschema.json"))
+		.log().all();
 		
 		Assert.assertEquals(response.getStatusCode(), 200);
 	}
@@ -75,7 +78,9 @@ public class UserTests {
 	@Test(priority=4)
 	public void LoginUserTest() {
 		Response response= Userendpoints.Loginuser(Userpayload.getUsername(), Userpayload.getPassword());
-		response.then().log().all();
+		response.then()
+		
+		.log().all();
 		
 		
 		Assert.assertEquals(response.getHeader("Content-Type"), "application/json");
